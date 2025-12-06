@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific ignores
+*.parameters.json
+*.bicepparam
+/9*/
+vyos-config-*.sh
