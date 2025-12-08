@@ -2,7 +2,6 @@
 
 ## Configuration
 
-- Configure region and region abbreviation in the bicep file
 - Configure the Region, Region Abbreviation, VM administrator password and pre-shared key in the parameters file.
 
 ## Notes
