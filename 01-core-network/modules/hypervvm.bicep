@@ -8,7 +8,7 @@ param adminPassword string
 param tags object = {}
 
 // Cheapest 32GB VM that supports nested virtualization: Standard_E4s_v5 (32 GB RAM)
-var vmSize = 'Standard_E4s_v5'
+var vmSize = 'Standard_E4s_v6'
 var osDiskSizeGB = 512
 var nicName = '${vmName}-nic'
 var publicIpName = '${vmName}-pip'
@@ -94,7 +94,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2023-09-01' = {
         createOption: 'FromImage'
         diskSizeGB: osDiskSizeGB
         managedDisk: {
-          storageAccountType: 'Premium_LRS'
+          storageAccountType: 'Standard_LRS'
         }
       }
     }
